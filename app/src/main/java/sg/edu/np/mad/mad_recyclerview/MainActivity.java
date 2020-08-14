@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements TodoAdapter.onTas
     }
 
     @Override
-    public void onCardClick(final int position) {
+    public void onTaskClick(final int position) {
         LayoutInflater inflater = getLayoutInflater();
         View dialogLayout = inflater.inflate(R.layout.deletedialog, null);
 
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements TodoAdapter.onTas
         imgTrash.setImageResource(R.drawable.ic_baseline_delete_outline_24);
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("")
+        builder.setTitle("Delete")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

@@ -49,10 +49,10 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewholder
         }
         @Override
         public void onClick(View v) {
-            taskClickListener.onCardClick(getAdapterPosition());
+            taskClickListener.onTaskClick(getAdapterPosition());
         }
     }
     public  interface onTaskClickListener{
-        void  onCardClick(int position);
+        void  onTaskClick(int position);
     }
 }
